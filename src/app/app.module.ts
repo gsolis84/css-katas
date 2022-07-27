@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -7,6 +7,7 @@ import { AngularHomeComponent } from './angular-home/angular-home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavBarComponent } from './shared/nav-bar/nav-bar.component';
 import { CSSContainerComponent } from './css-container/css-container.component';
+import { NavMenuIndicatorComponent } from './css-container/nav-menu-indicator/nav-menu-indicator.component';
 
 
 @NgModule({
@@ -15,7 +16,9 @@ import { CSSContainerComponent } from './css-container/css-container.component';
     AngularHomeComponent,
     NavBarComponent,
     CSSContainerComponent,
+    NavMenuIndicatorComponent,
   ],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA],
   imports: [
     BrowserModule,
     AppRoutingModule,

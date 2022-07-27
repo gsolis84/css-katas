@@ -4,7 +4,7 @@ import { AngularHomeComponent } from './angular-home/angular-home.component';
 import { CSSContainerComponent } from './css-container/css-container.component';
 
 const routes: Routes = [
-  {path: '', redirectTo:'/home', pathMatch:'full'},
+  {path: '', pathMatch:'full', component: AngularHomeComponent},
   {path: 'home', component: AngularHomeComponent},
   {path: 'CSS', component: CSSContainerComponent},
 ];
