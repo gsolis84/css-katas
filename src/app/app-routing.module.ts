@@ -6,7 +6,10 @@ import { CSSContainerComponent } from './css-container/css-container.component';
 const routes: Routes = [
   {path: '', pathMatch:'full', component: AngularHomeComponent},
   {path: 'home', component: AngularHomeComponent},
-  {path: 'CSS', component: CSSContainerComponent},
+  {path: 'CSS', 
+    loadChildren: () => import('./css-container/css-container.module').then(m => m.CSSContainerModule)
+  },
+  
 ];
 
 @NgModule({
