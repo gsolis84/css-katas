@@ -8,6 +8,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavBarComponent } from './shared/nav-bar/nav-bar.component';
 import { CSSContainerComponent } from './css-container/css-container.component';
 import { NavMenuIndicatorComponent } from './css-container/nav-menu-indicator/nav-menu-indicator.component';
+import { SoapBubbleAnimationComponent } from './css-container/soap-bubble-animation/soap-bubble-animation.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { NavMenuIndicatorComponent } from './css-container/nav-menu-indicator/na
     NavBarComponent,
     CSSContainerComponent,
     NavMenuIndicatorComponent,
+    SoapBubbleAnimationComponent,
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA],
   imports: [
