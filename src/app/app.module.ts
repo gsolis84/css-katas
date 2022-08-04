@@ -17,7 +17,7 @@ import { SoapBubbleAnimationComponent } from './css-container/soap-bubble-animat
     AngularHomeComponent,
     NavBarComponent,
   ],
-  schemas: [ CUSTOM_ELEMENTS_SCHEMA],
+  //schemas: [ CUSTOM_ELEMENTS_SCHEMA],
   imports: [
     BrowserModule,
     AppRoutingModule,
